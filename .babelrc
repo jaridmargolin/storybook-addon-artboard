@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", { "spec": true }],
+  ],
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/env", {
+      "modules": false,
+      "targets": { "browsers": [">0.25% in US"] }
+    }]
+  ]
+}

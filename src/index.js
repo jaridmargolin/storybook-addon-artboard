@@ -1,0 +1,1 @@
+export { withArtboard } from './withArtboard'

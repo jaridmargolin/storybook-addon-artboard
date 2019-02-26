@@ -1,0 +1,65 @@
+{
+  "name": "storybook-addon-artboard",
+  "version": "0.0.1",
+  "author": "Jarid Margolin <jaridmargolin@gmail.com>",
+  "description": "More control over the artboard you render components onto.",
+  "homepage": "https://github.com/jaridmargolin/storybook-addon-artboard",
+  "repository": "github:jaridmargolin/storybook-addon-artboard",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier-eslint --write \"**/*.js\"",
+    "lint": "eslint --quiet **/*.js",
+    "prepublishOnly": "npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "conditional-wrap": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react-x-ray": "^1.0.0-4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@babel/plugin-proposal-class-properties": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addons": "^5.0.0-rc.6",
+    "@storybook/components": "^5.0.0-rc.6",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.14.1",
+    "eslint-config-standard": "12.0.0",
+    "eslint-config-standard-react": "7.0.2",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-standard": "4.0.0",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.4",
+    "prettier-eslint-cli": "4.7.1",
+    "react": "16.8.3",
+    "rollup": "1.2.3",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "9.2.1",
+    "rollup-plugin-json": "3.1.0",
+    "rollup-plugin-node-resolve": "4.0.1",
+    "rollup-plugin-terser": "4.0.4"
+  },
+  "peerDependencies": {
+    "react": "16.8.3"
+  }
+}
