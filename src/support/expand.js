@@ -11,7 +11,7 @@ import { css } from '@emotion/core'
  * expand
  * -------------------------------------------------------------------------- */
 
-export default (display = 'flex') => css`
+export default (display = 'block') => css`
   display: ${display};
   position: absolute;
   overflow: auto;

@@ -18,7 +18,8 @@ import expand from '../support/expand'
  * -------------------------------------------------------------------------- */
 
 const Frame = styled.div`
-  ${expand()};
+  ${expand('flex')};
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 16px;
