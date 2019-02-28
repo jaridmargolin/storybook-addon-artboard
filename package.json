@@ -2,7 +2,7 @@
   "name": "storybook-addon-artboard",
   "version": "0.0.1",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "description": "More control over the artboard you render components onto.",
+  "description": "Storybook addon tools to augment preview area UI.",
   "homepage": "https://github.com/jaridmargolin/storybook-addon-artboard",
   "repository": "github:jaridmargolin/storybook-addon-artboard",
   "license": "MIT",
