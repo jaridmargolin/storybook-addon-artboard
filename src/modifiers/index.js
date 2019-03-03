@@ -4,17 +4,19 @@
  * dependencies
  * -------------------------------------------------------------------------- */
 
-// 3rd party
-import React from 'react'
-import addons from '@storybook/addons'
-
 // lib
-import Artboard from './components/Artboard'
+import Backdrop from './Backdrop'
+import Frame from './Frame'
+import XRay from './XRay'
 
 /* -----------------------------------------------------------------------------
- * withArtboard
+ * defaultModifiers
  * -------------------------------------------------------------------------- */
 
-export const withArtboard = storyFn => (
-  <Artboard {...{ channel: addons.getChannel() }}>{storyFn()}</Artboard>
-)
+export default [
+  { name: 'xray', icon: 'wrench', component: XRay },
+  { name: 'backdrop', icon: 'mirror', component: Backdrop },
+  { name: 'frame', icon: 'photo', component: Frame }
+]
+
+export { Backdrop, Frame, XRay }
