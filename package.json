@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-artboard",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
   "description": "Storybook addon tools to augment preview area UI.",
   "homepage": "https://github.com/jaridmargolin/storybook-addon-artboard",
